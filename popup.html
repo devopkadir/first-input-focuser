@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Focus First Input</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            transition: 0.50s background-color;
+            background-color: hsla(16, 88%, 62%, 0.993);
+            animation: colorChange 2s infinite alternate;
+        }
+
+        body:hover {
+            background-color: hsla(80, 90%, 49%, 0.959);
+        }
+
+        .container {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        img {
+            width: 110px;
+            height: 110px;
+        }
+
+        div {
+            margin-bottom: 2rem;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: hsla(88, 86%, 53%, 0.966);
+            }
+
+            50% {
+                background-color: hsla(17, 90%, 51%, 0.932);
+            }
+
+            100% {
+                background-color: hsla(288, 88%, 60%, 0.945);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="icon.png" alt="">
+        <div>(Alt + S)</div>
+    </div>
+</body>
+
+</html>
